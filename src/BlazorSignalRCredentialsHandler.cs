@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Soenneker.Blazor.SignalR.CredentialsHandler;
 
 /// <inheritdoc cref="IBlazorSignalRCredentialsHandler"/>
-public class BlazorSignalRCredentialsHandler : DelegatingHandler, IBlazorSignalRCredentialsHandler
+public sealed class BlazorSignalRCredentialsHandler : DelegatingHandler, IBlazorSignalRCredentialsHandler
 {
     protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
     {
