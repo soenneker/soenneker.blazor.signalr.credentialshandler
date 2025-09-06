@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Components.WebAssembly.Http;
+using Microsoft.AspNetCore.Components.WebAssembly.Http;
 using Soenneker.Blazor.SignalR.CredentialsHandler.Abstract;
 using System.Net.Http;
 using System.Threading;
