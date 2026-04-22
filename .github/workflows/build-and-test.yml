@@ -38,7 +38,7 @@ jobs:
         run: dotnet build test/Soenneker.Blazor.SignalR.CredentialsHandler.Tests/Soenneker.Blazor.SignalR.CredentialsHandler.Tests.csproj --configuration Release --no-restore --verbosity minimal
 
       - name: Test
-        run: dotnet test test/Soenneker.Blazor.SignalR.CredentialsHandler.Tests/Soenneker.Blazor.SignalR.CredentialsHandler.Tests.csproj --configuration Release --no-build --no-restore --verbosity minimal
+        run: dotnet test --project test/Soenneker.Blazor.SignalR.CredentialsHandler.Tests/Soenneker.Blazor.SignalR.CredentialsHandler.Tests.csproj --configuration Release --no-build --no-restore --verbosity minimal
 
       - name: Pack
         run: dotnet pack src/Soenneker.Blazor.SignalR.CredentialsHandler/Soenneker.Blazor.SignalR.CredentialsHandler.csproj --configuration Release --no-build --no-restore --output . --verbosity minimal

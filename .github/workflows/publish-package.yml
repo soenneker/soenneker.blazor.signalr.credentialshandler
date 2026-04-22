@@ -56,7 +56,7 @@ jobs:
         run: dotnet build test/Soenneker.Blazor.SignalR.CredentialsHandler.Tests/Soenneker.Blazor.SignalR.CredentialsHandler.Tests.csproj --configuration Release --no-restore --verbosity minimal
 
       - name: Test
-        run: dotnet test test/Soenneker.Blazor.SignalR.CredentialsHandler.Tests/Soenneker.Blazor.SignalR.CredentialsHandler.Tests.csproj --configuration Release --no-build --no-restore --verbosity normal
+        run: dotnet test --project test/Soenneker.Blazor.SignalR.CredentialsHandler.Tests/Soenneker.Blazor.SignalR.CredentialsHandler.Tests.csproj --configuration Release --no-build --no-restore --verbosity normal
 
 
       - name: Restore library
