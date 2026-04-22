@@ -1,16 +1,15 @@
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Blazor.SignalR.CredentialsHandler.Tests;
 
-[Collection("Collection")]
-public class BlazorSignalRCredentialsHandlerTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public class BlazorSignalRCredentialsHandlerTests : HostedUnitTest
 {
-    public BlazorSignalRCredentialsHandlerTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public BlazorSignalRCredentialsHandlerTests(Host host) : base(host)
     {
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
